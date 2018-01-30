@@ -32,8 +32,7 @@ The script also accepts command-line arguments so that you can make a shortcut f
 3. In the **Target** field (under **Shortcut**, which should be the default tab), after the **.ps1** add a space followed by your server name, then another space followed by the channel name (you do not have to add a channel name if you don't want to). For example: **alexina ch1** (hch is the housing channel)
 4. In order to double click to run the script, go to the beginning of the **Target** field, and add **powershell** followed by a space.
 
-In
-	"l" = "login";order to quickly move from the first screen to a ping, you may type the service name directly or a server name + channel.
+In order to quickly move from the first screen to a ping, you may type the service name directly or a server name + channel.
 
 The shortest commands available are:
 
