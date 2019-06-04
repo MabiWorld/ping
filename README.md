@@ -12,15 +12,13 @@ To run the script after downloading, right-click the file and select **Run with 
 After running, you will be prompted to select the server (or other services) and then the channel (or specific service). Type the number or letter left of the parenthesis to select it. For example:
 
 	Choose a server:
-	1) Mari
-	2) Ruairi
-	3) Tarlach
-	4) Alexina
-	5) Other services
+	1) Alexina
+	2) Nao
+	3) Other services
 
 	Input your server name:
 
-If you want to select Mari, type **1**
+If you want to select Alexina, type **1**
 
 If you wish to end the program at any time, use Ctrl+C
 
@@ -36,10 +34,8 @@ In order to quickly move from the first screen to a ping, you may type the servi
 
 The shortest commands available are:
 
-* m 1 -> Mari Channel 1
-* r 2 -> Ruairi Channel 2
-* t 3 -> Tarlach Channel 3
-* a h -> Alexina Housing Channel
+* a 1 -> Alexina Channel 1
+* n h -> Nao Housing Channel
 * a -> Nexon API
 * l -> Login server
 * c -> Chat server
@@ -47,4 +43,3 @@ The shortest commands available are:
 * w -> Mabinogi World Wiki
 
 Other formations are available (such as the full names) and it attempts to correct for spelling and accepts various shorthand. All of these combinations are also accepted on the command line.
-
