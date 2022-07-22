@@ -12,13 +12,12 @@ To run the script after downloading, right-click the file and select **Run with 
 After running, you will be prompted to select the server (or other services) and then the channel (or specific service). Type the number or letter left of the parenthesis to select it. For example:
 
 	Choose a server:
-	1) Alexina
-	2) Nao
-	3) Other services
+	1) Erinn
+	2) Other services
 
 	Input your server name:
 
-If you want to select Alexina, type **1**
+If you want to select Erinn, type **1**
 
 If you wish to end the program at any time, use Ctrl+C
 
@@ -27,15 +26,15 @@ The script also accepts command-line arguments so that you can make a shortcut f
 
 1. Right-click the script file and select **Create shortcut**
 2. Right-click the new shortcut file and select **Properties**
-3. In the **Target** field (under **Shortcut**, which should be the default tab), after the **.ps1** add a space followed by your server name, then another space followed by the channel name (you do not have to add a channel name if you don't want to). For example: **alexina ch1** (hch is the housing channel)
+3. In the **Target** field (under **Shortcut**, which should be the default tab), after the **.ps1** add a space followed by your server name, then another space followed by the channel name (you do not have to add a channel name if you don't want to). For example: **erinn ch1** (hch is the housing channel)
 4. In order to double click to run the script, go to the beginning of the **Target** field, and add **powershell** followed by a space.
 
 In order to quickly move from the first screen to a ping, you may type the service name directly or a server name + channel.
 
 The shortest commands available are:
 
-* a 1 -> Alexina Channel 1
-* n h -> Nao Housing Channel
+* e 1 -> Erinn Channel 1
+* e h -> Erinn Housing Channel
 * a -> Nexon API
 * l -> Login server
 * c -> Chat server
