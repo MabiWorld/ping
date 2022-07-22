@@ -6,17 +6,7 @@ $addrs = @{
 		"website" = @("http://mabinogi.nexon.net/API/Service/Maintenance", "POST");
 		"wiki" = @("wiki.mabi.world", "ping");
 	};
-	"alexina" = @{
-		"ch1" = @("34.208.22.139", 11020);
-		"ch2" = @("34.208.22.139", 11021);
-		"ch3" = @("34.211.90.87", 11022);
-		"ch4" = @("34.211.90.87", 11020);
-		"ch5" = @("34.214.81.35", 11021);
-		"ch6" = @("34.214.81.35", 11022);
-		"ch7" = @("34.218.166.120", 11023);
-		"hch" = @("34.218.166.120", 11020);
-	};
-	"nao" = @{
+	"erinn" = @{
 		"ch1" = @("34.218.42.114", 11020);
 		"ch2" = @("34.218.42.114", 11021);
 		"ch3" = @("50.112.234.180", 11022);
@@ -33,25 +23,22 @@ $addrs = @{
 
 $names = @{
 	# Identities.
-	"alexina" = "alexina";
-	"nao" = "nao";
+	"erinn" = "erinn";
 	"other" = "service";
 	"service" = "service";
 	"services" = "service";
 
 	# Numerical indexes.
-	"1" = "alexina";
-	"2" = "nao";
-	"3" = "service";
+	"1" = "erinn";
+	"2" = "service";
 
 	# Internal names.
-	"mabius4" = "alexina";
-	"mabius5" = "nao";
+	"mabius5" = "erinn";
 
 	# Shorthand.
-	"a" = "alexina";
-	"alex" = "alexina";
-	"n" = "nao";
+	"e" = "erinn";
+	"na" = "erinn";
+	"game" = "erinn";
 }
 
 $serviceNames = @{
@@ -129,12 +116,11 @@ $running = 1
 while($running) {
 	if (-not $server) {
 		"Choose a server:"
-		"1) Alexina"
-		"2) Nao"
-		"3) Other services"
+		"1) Erinn"
+		"2) Other services"
 		""
 
-		$server = Extended-Choice -Choice "123" -Prompt "Input your server name"
+		$server = Extended-Choice -Choice "12" -Prompt "Input your server name"
 	}
 
 	$server = $server.toLower()
@@ -185,12 +171,13 @@ while($running) {
 			}
 			else {
 				if (-not $channel) {
-					"1~7) Channel #"
+					"1~9) Channel #"
+					"0) Channel 10"
 					"H) Housing channel"
 					"Q) Go back"
 					""
 
-					$channel = Extended-Choice -Choice "1234567hq" -Prompt "Input channel"
+					$channel = Extended-Choice -Choice "1234567890hq" -Prompt "Input channel"
 					$channel = $channel.toLower()
 				}
 
@@ -200,7 +187,11 @@ while($running) {
 					$channel = "hch"
 					$pinging = 1
 				}
-				elseif ($channel -match "^[1-7]$") {
+				elseif ($channel -eq "0") {
+					$channel = "ch10"
+					$pinging = 1
+				}
+				elseif ($channel -match "^[1-9]$") {
 					$channel = "ch" + $channel
 					$pinging = 1
 				}
