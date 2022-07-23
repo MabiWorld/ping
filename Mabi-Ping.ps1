@@ -33,7 +33,7 @@ $names = @{
 	"2" = "service";
 
 	# Internal names.
-	"mabius5" = "erinn";
+	"mabius6" = "erinn";
 
 	# Shorthand.
 	"e" = "erinn";
